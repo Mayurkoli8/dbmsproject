@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Attendance Management</title>
+     <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h2>Student Attendance Management System</h2>
+
+    <!-- Admin Login -->
+    <form action="login.php" method="post">
+        <h3>Admin Login</h3>
+        Username: <input type="text" name="username"><br><br>
+        Password: <input type="password" name="password"><br><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <!-- Attendance Form -->
+    <form action="attendance.php" method="post">
+        <h3>Mark Attendance</h3>
+        Student ID: <input type="text" name="student_id"><br><br>
+        Class: <input type="text" name="class"><br><br>
+        Subject: <input type="text" name="subject"><br><br>
+        Status: 
+        <select name="status">
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+        </select><br><br>
+        <input type="submit" value="Submit Attendance">
+    </form>
+</body>
+</html>
+
